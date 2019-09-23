@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Flip Box
+ * Lovage Block: Flip Box
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -67,14 +67,14 @@ class EBFlipBook extends Component{
 			            <div class="inner">
 			              <RichText
 				            tagName="strong"
-				            placeholder={ __( 'Title', 'elegant-blocks' ) }
+				            placeholder={ __( 'Title', 'lovage-blocks' ) }
 				            value={ frontTitle }
 				            className={ classnames('title') }
 				            onChange={ (value) => setAttributes( { frontTitle: value } ) }
 		  		         />
 			             <RichText
 				            tagName="p"
-				            placeholder={ __( 'Content', 'elegant-blocks' ) }
+				            placeholder={ __( 'Content', 'lovage-blocks' ) }
 				            value={ frontContent }
 				            className={ classnames('content') }
 				            onChange={ (value) => setAttributes( { frontContent: value } ) }
@@ -86,14 +86,14 @@ class EBFlipBook extends Component{
 			            <div class="inner">
 			              <RichText
 				            tagName="strong"
-				            placeholder={ __( 'Title', 'elegant-blocks' ) }
+				            placeholder={ __( 'Title', 'lovage-blocks' ) }
 				            value={ backTitle }
 				            className={ classnames('title') }
 				            onChange={ (value) => setAttributes( { backTitle: value } ) }
 		  		         />
 			             <RichText
 				            tagName="p"
-				            placeholder={ __( 'Content', 'elegant-blocks' ) }
+				            placeholder={ __( 'Content', 'lovage-blocks' ) }
 				            value={ backContent }
 				            className={ classnames('content') }
 				            onChange={ (value) => setAttributes( { backContent: value } ) }
@@ -120,16 +120,16 @@ class EBFlipBook extends Component{
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/flip-box', {
+registerBlockType( 'lovage-blocks/flip-box', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Flip Box', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a 3D flip box.', 'elegant-blocks' ), // Block description.
+	title: __( 'Flip Box', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a 3D flip box.', 'lovage-blocks' ), // Block description.
 	icon: icons.flipbox, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'flip box', 'elegant-blocks' ),
-		__( 'flip', 'elegant-blocks' ),
-		__( 'flipbox', 'elegant-blocks' ),
+		__( 'flip box', 'lovage-blocks' ),
+		__( 'flip', 'lovage-blocks' ),
+		__( 'flipbox', 'lovage-blocks' ),
 	],
 	attributes: {
 		id: {
@@ -213,13 +213,13 @@ registerBlockType( 'elegant-blocks/flip-box', {
 			            <div class="inner">
 			              <RichText.Content
 				            tagName="strong"
-				            placeholder={ __( 'Title', 'elegant-blocks' ) }
+				            placeholder={ __( 'Title', 'lovage-blocks' ) }
 				            value={ frontTitle }
 				            className={ classnames('title') }
 		  		         />
 			             <RichText.Content
 				            tagName="p"
-				            placeholder={ __( 'Content', 'elegant-blocks' ) }
+				            placeholder={ __( 'Content', 'lovage-blocks' ) }
 				            value={ frontContent }
 				            className={ classnames('content') }
 		  		         />
@@ -230,13 +230,13 @@ registerBlockType( 'elegant-blocks/flip-box', {
 			            <div class="inner">
 			              <RichText.Content
 				            tagName="strong"
-				            placeholder={ __( 'Title', 'elegant-blocks' ) }
+				            placeholder={ __( 'Title', 'lovage-blocks' ) }
 				            value={ backTitle }
 				            className={ classnames('title') }
 		  		         />
 			             <RichText.Content
 				            tagName="p"
-				            placeholder={ __( 'Content', 'elegant-blocks' ) }
+				            placeholder={ __( 'Content', 'lovage-blocks' ) }
 				            value={ backContent }
 				            className={ classnames('content') }
 		  		         />

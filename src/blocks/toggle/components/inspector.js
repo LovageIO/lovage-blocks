@@ -51,29 +51,29 @@ export default class Inspector extends Component {
 		return (
 		<InspectorControls key="inspector">
 
-			<PanelBody title={ __('Open Status', 'elegant-blocks') } initialOpen={ true }>
+			<PanelBody title={ __('Open Status', 'lovage-blocks') } initialOpen={ true }>
 		    <ToggleControl
-					label={ __( 'Open By Default?', 'elegant-blocks' ) }
+					label={ __( 'Open By Default?', 'lovage-blocks' ) }
 					checked={ toggleOpen }
 					onChange={ () => this.props.setAttributes( { toggleOpen: ! toggleOpen } ) }
 				/>
 			</PanelBody>
 	
-			<PanelBody title={ __('Title Text Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Title Text Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ titleColor }
 		            onChangeComplete={ (value) => setAttributes( { titleColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Content Text Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Content Text Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ contentColor }
 		            onChangeComplete={ (value) => setAttributes( { contentColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Border Radius', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Border Radius', 'lovage-blocks') } initialOpen={ false }>
 				<SelectControl
 					description={ __( 'Choose between a round, rounded or square corner shape.' ) }
 					options={ shapeOptions }
@@ -82,14 +82,14 @@ export default class Inspector extends Component {
 				/>
 			</PanelBody>
 
-			<PanelBody title={ __('Border Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Border Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ borderColor }
 		            onChangeComplete={ (value) => setAttributes( { borderColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Font Size', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Font Size', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					label={ __( 'Title Font Size' ) }
 					value={ titleFontSize }

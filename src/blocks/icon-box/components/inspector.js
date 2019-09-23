@@ -58,7 +58,7 @@ export default class Inspector extends Component {
 		return (
 		<InspectorControls key="inspector">
 
-			<PanelBody title={ __('Icon Picker', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Icon Picker', 'lovage-blocks') } initialOpen={ false }>
 				 <EB_IconControl
 				     icon={ icon }
 				     onChangeComplete={ (value) => setAttributes( { icon: value } ) } 
@@ -94,21 +94,21 @@ export default class Inspector extends Component {
 				/>
 			</PanelBody>
 	
-			<PanelBody title={ __('Title Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Title Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ titleColor }
 		            onChangeComplete={ (value) => setAttributes( { titleColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Content Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Content Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ contentColor }
 		            onChangeComplete={ (value) => setAttributes( { contentColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Font Size', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Font Size', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					label={ __( 'Title Font Size' ) }
 					value={ titleFontSize }

@@ -1,5 +1,5 @@
 /**
- * Elegant Blocks for Gutenberg Editor.
+ * Lovage Blocks for Gutenberg Editor.
  *
  * All blocks related JavaScript files should be imported here.
  * You can create a new block folder in this dir and include code

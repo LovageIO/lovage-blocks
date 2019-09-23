@@ -45,37 +45,37 @@ export default class Inspector extends Component {
 		return (
 		<InspectorControls key="inspector">
 
-			<PanelBody title={ __('Icon Picker', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Icon Picker', 'lovage-blocks') } initialOpen={ false }>
 				 <EB_IconControl
 				     icon={ icon }
 				     onChangeComplete={ (value) => setAttributes( { icon: value } ) } 
 				 />
 			</PanelBody>
 			
-			<PanelBody title={ __('Link Target', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Link Target', 'lovage-blocks') } initialOpen={ false }>
 				<ToggleControl
-					label={ __( 'Open link in new window', 'elegant-blocks' ) }
+					label={ __( 'Open link in new window', 'lovage-blocks' ) }
 					checked={ linkTarget }
 					onChange={ () => this.props.setAttributes( { linkTarget: ! linkTarget } ) }
 				/>
 			</PanelBody>
 
 	
-			<PanelBody title={ __('Title Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Title Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ titleColor }
 		            onChangeComplete={ (value) => setAttributes( { titleColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Icon Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Icon Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ iconColor }
 		            onChangeComplete={ (value) => setAttributes( { iconColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Font Size', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Font Size', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					label={ __( 'Title Font Size' ) }
 					value={ titleFontSize }

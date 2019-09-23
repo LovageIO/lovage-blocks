@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Blockquote
+ * Lovage Block: Blockquote
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -48,15 +48,15 @@ const ALLOWED_MEDIA_TYPES = [ 'image' ];
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/blockquote', {
+registerBlockType( 'lovage-blocks/blockquote', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Blockquote', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a blockquote.', 'elegant-blocks' ), // Block description.
+	title: __( 'Blockquote', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a blockquote.', 'lovage-blocks' ), // Block description.
 	icon: icons.blockquote, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'quote', 'elegant-blocks' ),
-		__( 'blockquote', 'elegant-blocks' )
+		__( 'quote', 'lovage-blocks' ),
+		__( 'blockquote', 'lovage-blocks' )
 	],
 	attributes: {
 		id: {
@@ -178,7 +178,7 @@ registerBlockType( 'elegant-blocks/blockquote', {
 		    	   
 		    	   <RichText
 			            tagName="blockquote"
-			            placeholder={ __( 'Content', 'elegant-blocks' ) }
+			            placeholder={ __( 'Content', 'lovage-blocks' ) }
 			            value={ content }
 			            className={ classnames('eb-blockquote-detail', 'eb-text', 'eb-font-size-'+contentFontSize) }
 			            onChange={ (value) => setAttributes( { content: value } ) }
@@ -217,7 +217,7 @@ registerBlockType( 'elegant-blocks/blockquote', {
 					    <div className="eb-blockquote-profile">
 						  <RichText
 				            tagName="h4"
-				            placeholder={ __( 'Name', 'elegant-blocks' ) }
+				            placeholder={ __( 'Name', 'lovage-blocks' ) }
 				            value={ name }
 				            className={ classnames('eb-blockquote-name', 'eb-text', 'eb-font-size-'+nameFontSize) }
 				            onChange={ (value) => setAttributes( { name: value } ) }
@@ -228,7 +228,7 @@ registerBlockType( 'elegant-blocks/blockquote', {
 			  		      />
 			  		      <RichText
 				            tagName="span"
-				            placeholder={ __( 'Job', 'elegant-blocks' ) }
+				            placeholder={ __( 'Job', 'lovage-blocks' ) }
 				            value={ job }
 				            className={ classnames('eb-blockquote-job', 'eb-text', 'eb-font-size-'+nameFontSize) }
 				            onChange={ (value) => setAttributes( { job: value } ) }

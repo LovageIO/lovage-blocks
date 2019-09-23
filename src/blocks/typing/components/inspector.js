@@ -38,14 +38,14 @@ export default class Inspector extends Component {
 		return (
 		<InspectorControls key="inspector">
 
-			<PanelBody title={ __('Text Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Text Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ textColor }
 		            onChangeComplete={ (value) => setAttributes( { textColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Text Font Size', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Text Font Size', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					value={ textFontSize }
 					onChange={ ( value ) => this.props.setAttributes( { textFontSize: value } ) }

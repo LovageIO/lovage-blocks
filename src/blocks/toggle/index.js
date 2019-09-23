@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Toggle
+ * Lovage Block: Toggle
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -50,15 +50,15 @@ const {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/toggle', {
+registerBlockType( 'lovage-blocks/toggle', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Toggle', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a toggle.', 'elegant-blocks' ), // Block description.
+	title: __( 'Toggle', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a toggle.', 'lovage-blocks' ), // Block description.
 	icon: icons.toggle, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'toggle', 'elegant-blocks' ),
-		__( 'accordion', 'elegant-blocks' )
+		__( 'toggle', 'lovage-blocks' ),
+		__( 'accordion', 'lovage-blocks' )
 	],
 	attributes: {
 		id: {
@@ -170,7 +170,7 @@ registerBlockType( 'elegant-blocks/toggle', {
 	    	       <summary className={ classnames("eb-toggle-title") } style={{ borderColor: borderColor }}>
 		    	   <RichText
 			            tagName="span"
-			            placeholder={ __( 'Title', 'elegant-blocks' ) }
+			            placeholder={ __( 'Title', 'lovage-blocks' ) }
 			            value={ title }
 			            className={ classnames('eb-toggle-title-text', 'eb-text', 'eb-font-size-'+titleFontSize) }
 			            onChange={ (value) => setAttributes( { title: value } ) }

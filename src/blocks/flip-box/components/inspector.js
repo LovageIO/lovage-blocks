@@ -41,14 +41,14 @@ export default class Inspector extends Component {
 		return (
 		<InspectorControls key="inspector">
 
-			<PanelBody title={ __('Front Background Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Front Background Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ frontBackgroundColor }
 		            onChangeComplete={ (value) => setAttributes( { frontBackgroundColor: value.hex } ) }
 		        />
 			</PanelBody>
 	
-			<PanelBody title={ __('Back Background Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Back Background Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ backBackgroundColor }
 		            onChangeComplete={ (value) => setAttributes( { backBackgroundColor: value.hex } ) }

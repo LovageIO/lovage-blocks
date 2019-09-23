@@ -41,21 +41,21 @@ export default class Inspector extends Component {
 		<InspectorControls key="inspector">
 
 	
-			<PanelBody title={ __('Notice Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Notice Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ noticeColor }
 		            onChangeComplete={ (value) => setAttributes( { noticeColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Content Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Content Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ contentColor }
 		            onChangeComplete={ (value) => setAttributes( { contentColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Content Font Size', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Content Font Size', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					value={ contentFontSize }
 					onChange={ ( value ) => this.props.setAttributes( { contentFontSize: value } ) }

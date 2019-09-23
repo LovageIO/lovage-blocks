@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Icon List
+ * Lovage Block: Icon List
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -48,16 +48,16 @@ const {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/icon-list', {
+registerBlockType( 'lovage-blocks/icon-list', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Icon List', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a icon list.', 'elegant-blocks' ), // Block description.
+	title: __( 'Icon List', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a icon list.', 'lovage-blocks' ), // Block description.
 	icon: icons.iconList, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'icon', 'elegant-blocks' ),
-		__( 'icon list', 'elegant-blocks' ),
-		__( 'list', 'elegant-blocks' ),
+		__( 'icon', 'lovage-blocks' ),
+		__( 'icon list', 'lovage-blocks' ),
+		__( 'list', 'lovage-blocks' ),
 	],
 	attributes: {
 		id: {
@@ -179,7 +179,7 @@ registerBlockType( 'elegant-blocks/icon-list', {
 	    	   <div className="eb-icon-list-title">
 		    	   <RichText
 			            tagName="span"
-			            placeholder={ __( 'Title', 'elegant-blocks' ) }
+			            placeholder={ __( 'Title', 'lovage-blocks' ) }
 			            value={ title }
 			            className={ classnames('eb-icon-list-text', 'eb-text', 'eb-font-size-'+titleFontSize) }
 			            onChange={ (value) => setAttributes( { title: value } ) }
@@ -209,7 +209,7 @@ registerBlockType( 'elegant-blocks/icon-list', {
 					/>
 					<IconButton
 						icon="editor-break"
-						label={ __( 'Apply', 'elegant-blocks' ) }
+						label={ __( 'Apply', 'lovage-blocks' ) }
 						type="submit"
 					/>
 				</form>

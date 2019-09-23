@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Button
+ * Lovage Block: Button
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -50,14 +50,14 @@ const {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/button', {
+registerBlockType( 'lovage-blocks/button', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Button', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a button.', 'elegant-blocks' ), // Block description.
+	title: __( 'Button', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a button.', 'lovage-blocks' ), // Block description.
 	icon: icons.button, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'button', 'elegant-blocks' )
+		__( 'button', 'lovage-blocks' )
 	],
 	attributes: {
 		id: {
@@ -171,7 +171,7 @@ registerBlockType( 'elegant-blocks/button', {
 		    	>
 		    	   <RichText
 			            tagName="span"
-			            placeholder={ __( 'Button Text', 'elegant-blocks' ) }
+			            placeholder={ __( 'Button Text', 'lovage-blocks' ) }
 			            value={ buttonText }
 			            className={ classnames('eb-button-text', 'eb-text', 'eb-font-size-'+buttonFontSize) }
 			            onChange={ (value) => setAttributes( { buttonText: value } ) }
@@ -202,7 +202,7 @@ registerBlockType( 'elegant-blocks/button', {
 					/>
 					<IconButton
 						icon="editor-break"
-						label={ __( 'Apply', 'elegant-blocks' ) }
+						label={ __( 'Apply', 'lovage-blocks' ) }
 						type="submit"
 					/>
 				</form>

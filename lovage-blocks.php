@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name: Elegant Blocks Pro
- * Plugin URI: https://elegantblocks.io
- * Description: Elegant Blocks for Gutenberg Editor.
- * Author: ThemeVan
- * Author URI: https://www.themevan.com/
+ * Plugin Name: Lovage Blocks
+ * Plugin URI: https://lovage.io/blocks
+ * Description: Lovage Blocks offers the extended blocks for Gutenberg Editor.
+ * Author: Lovage
+ * Author URI: https://lovage.io/
  * Version: 0.0.1
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package Elegant Blocks
+ * @package Lovage Blocks
  */
 
 // Exit if accessed directly.

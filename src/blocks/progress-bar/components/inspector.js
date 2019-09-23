@@ -40,7 +40,7 @@ export default class Inspector extends Component {
 		return (
 		<InspectorControls key="inspector">
 
-		    <PanelBody title={ __('Progress Bar Length', 'elegant-blocks') } initialOpen={ false }>
+		    <PanelBody title={ __('Progress Bar Length', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					label={ __( 'Percent' ) }
 					value={ percent }
@@ -51,14 +51,14 @@ export default class Inspector extends Component {
 				/>
 			</PanelBody>
 
-			<PanelBody title={ __('Highlight Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Highlight Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ barColor }
 		            onChangeComplete={ (value) => setAttributes( { barColor: value.hex } ) }
 		        />
 			</PanelBody>
 	
-			<PanelBody title={ __('Background Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Background Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ bgColor }
 		            onChangeComplete={ (value) => setAttributes( { bgColor: value.hex } ) }

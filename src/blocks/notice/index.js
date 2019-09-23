@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Notice
+ * Lovage Block: Notice
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -48,16 +48,16 @@ const ALLOWED_MEDIA_TYPES = [ 'image' ];
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/notice', {
+registerBlockType( 'lovage-blocks/notice', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Notice', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a notice.', 'elegant-blocks' ), // Block description.
+	title: __( 'Notice', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a notice.', 'lovage-blocks' ), // Block description.
 	icon: icons.notice, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'notice', 'elegant-blocks' ),
-		__( 'information', 'elegant-blocks' ),
-		__( 'warining', 'elegant-blocks' ),
+		__( 'notice', 'lovage-blocks' ),
+		__( 'information', 'lovage-blocks' ),
+		__( 'warining', 'lovage-blocks' ),
 	],
 	attributes: {
 		id: {
@@ -152,7 +152,7 @@ registerBlockType( 'elegant-blocks/notice', {
 
 		    	   <RichText
 			            tagName="p"
-			            placeholder={ __( 'Content', 'elegant-blocks' ) }
+			            placeholder={ __( 'Content', 'lovage-blocks' ) }
 			            value={ content }
 			            className={ classnames('eb-notice-content', 'eb-text', 'eb-font-size-'+contentFontSize) }
 			            onChange={ (value) => setAttributes( { content: value } ) }

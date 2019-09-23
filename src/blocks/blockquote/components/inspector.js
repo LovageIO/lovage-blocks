@@ -48,7 +48,7 @@ export default class Inspector extends Component {
 		return (
 		<InspectorControls key="inspector">
 			
-			<PanelBody title={ __('Avatar', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Avatar', 'lovage-blocks') } initialOpen={ false }>
 				<SelectControl
 					label={ __( 'Image Shape' ) }
 					description={ __( 'Choose between a round or square avatar shape.' ) }
@@ -59,21 +59,21 @@ export default class Inspector extends Component {
 			</PanelBody>
 
 	
-			<PanelBody title={ __('Name Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Name Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ nameColor }
 		            onChangeComplete={ (value) => setAttributes( { nameColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Content Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Content Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ contentColor }
 		            onChangeComplete={ (value) => setAttributes( { contentColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Font Size', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Font Size', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					label={ __( 'Name Font Size' ) }
 					value={ nameFontSize }

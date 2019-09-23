@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Progress Bar
+ * Lovage Block: Progress Bar
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -35,16 +35,16 @@ const { RichText } = wp.editor;
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/progress-bar', {
+registerBlockType( 'lovage-blocks/progress-bar', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Progress Bar', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a prodress bar.', 'elegant-blocks' ), // Block description.
+	title: __( 'Progress Bar', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a prodress bar.', 'lovage-blocks' ), // Block description.
 	icon: icons.progressbar, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'skill', 'elegant-blocks' ),
-		__( 'progress bar', 'elegant-blocks' ),
-		__( 'process', 'elegant-blocks' ),
+		__( 'skill', 'lovage-blocks' ),
+		__( 'progress bar', 'lovage-blocks' ),
+		__( 'process', 'lovage-blocks' ),
 	],
 	attributes: {
 		id: {
@@ -115,7 +115,7 @@ registerBlockType( 'elegant-blocks/progress-bar', {
 	    	    <div className="eb-progress-bar-highlight" style={{ width: percent+'%', backgroundColor: barColor }}>
 	    	       <RichText
 			            tagName="strong"
-			            placeholder={ __( 'Title', 'elegant-blocks' ) }
+			            placeholder={ __( 'Title', 'lovage-blocks' ) }
 			            value={ title }
 			            className={ classnames('eb-progress-bar-title') }
 			            onChange={ (value) => setAttributes( { title: value } ) }

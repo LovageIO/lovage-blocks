@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Image Box
+ * Lovage Block: Image Box
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -48,16 +48,16 @@ const ALLOWED_MEDIA_TYPES = [ 'image' ];
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/image-box', {
+registerBlockType( 'lovage-blocks/image-box', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Image Box', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a image box.', 'elegant-blocks' ), // Block description.
+	title: __( 'Image Box', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a image box.', 'lovage-blocks' ), // Block description.
 	icon: icons.imagebox, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'image', 'elegant-blocks' ),
-		__( 'image box', 'elegant-blocks' ),
-		__( 'member', 'elegant-blocks' ),
+		__( 'image', 'lovage-blocks' ),
+		__( 'image box', 'lovage-blocks' ),
+		__( 'member', 'lovage-blocks' ),
 	],
 	attributes: {
 		id: {
@@ -209,7 +209,7 @@ registerBlockType( 'elegant-blocks/image-box', {
 	    	   <div className="eb-image-box-content">
 		    	   <RichText
 			            tagName="h4"
-			            placeholder={ __( 'Title', 'elegant-blocks' ) }
+			            placeholder={ __( 'Title', 'lovage-blocks' ) }
 			            value={ title }
 			            className={ classnames('eb-image-box-title', 'eb-text', 'eb-font-size-'+titleFontSize) }
 			            onChange={ (value) => setAttributes( { title: value } ) }
@@ -222,7 +222,7 @@ registerBlockType( 'elegant-blocks/image-box', {
 
 		    	   <RichText
 			            tagName="p"
-			            placeholder={ __( 'Content', 'elegant-blocks' ) }
+			            placeholder={ __( 'Content', 'lovage-blocks' ) }
 			            value={ content }
 			            className={ classnames('eb-image-box-desc', 'eb-text', 'eb-font-size-'+contentFontSize) }
 			            onChange={ (value) => setAttributes( { content: value } ) }

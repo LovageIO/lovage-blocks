@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Price Table
+ * Lovage Block: Price Table
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -45,16 +45,16 @@ const {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/price-table', {
+registerBlockType( 'lovage-blocks/price-table', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Price Table', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a price table.', 'elegant-blocks' ), // Block description.
+	title: __( 'Price Table', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a price table.', 'lovage-blocks' ), // Block description.
 	icon: icons.priceTable, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'price', 'elegant-blocks' ),
-		__( 'table', 'elegant-blocks' ),
-		__( 'price table', 'elegant-blocks' )
+		__( 'price', 'lovage-blocks' ),
+		__( 'table', 'lovage-blocks' ),
+		__( 'price table', 'lovage-blocks' )
 	],
 	attributes: {
 		id: {
@@ -207,7 +207,7 @@ registerBlockType( 'elegant-blocks/price-table', {
 			       	   >
 			       	       <RichText
 					            tagName="span"
-					            placeholder={ __( 'Popular', 'elegant-blocks' ) }
+					            placeholder={ __( 'Popular', 'lovage-blocks' ) }
 					            value={ ribbonText }
 					            className={ classnames('eb-pricetable-ribbon-text', 'eb-text') }
 					            onChange={ (value) => setAttributes( { ribbonText: value } ) }
@@ -220,7 +220,7 @@ registerBlockType( 'elegant-blocks/price-table', {
 
 		    	   <RichText
 			            tagName="div"
-			            placeholder={ __( 'Title', 'elegant-blocks' ) }
+			            placeholder={ __( 'Title', 'lovage-blocks' ) }
 			            value={ title }
 			            className={ classnames('eb-pricetable-title', 'eb-text', 'eb-font-size-'+titleFontSize) }
 			            onChange={ (value) => setAttributes( { title: value } ) }
@@ -230,7 +230,7 @@ registerBlockType( 'elegant-blocks/price-table', {
 
 		    	   <RichText
 			            tagName="div"
-			            placeholder={ __( '$20/Month', 'elegant-blocks' ) }
+			            placeholder={ __( '$20/Month', 'lovage-blocks' ) }
 			            value={ price }
 			            className={ classnames('eb-pricetable-price', 'eb-text', 'eb-font-size-'+priceFontSize) }
 			            onChange={ (value) => setAttributes( { price: value } ) }
@@ -239,7 +239,7 @@ registerBlockType( 'elegant-blocks/price-table', {
 
 			  	    <RichText
 			            tagName="div"
-			            placeholder={ __( 'Content', 'elegant-blocks' ) }
+			            placeholder={ __( 'Content', 'lovage-blocks' ) }
 			            value={ content }
 			            className={ classnames('eb-pricetable-content', 'eb-text', 'eb-font-size-'+contentFontSize) }
 			            onChange={ (value) => setAttributes( { content: value } ) }
@@ -255,7 +255,7 @@ registerBlockType( 'elegant-blocks/price-table', {
 				    	>
 				    	   <RichText
 					            tagName="span"
-					            placeholder={ __( 'Button Text', 'elegant-blocks' ) }
+					            placeholder={ __( 'Button Text', 'lovage-blocks' ) }
 					            value={ buttonText }
 					            className={ classnames('eb-button-text', 'eb-text', 'eb-font-size-'+buttonFontSize) }
 					            onChange={ (value) => setAttributes( { buttonText: value } ) }
@@ -280,7 +280,7 @@ registerBlockType( 'elegant-blocks/price-table', {
 							/>
 							<IconButton
 								icon="editor-break"
-								label={ __( 'Apply', 'elegant-blocks' ) }
+								label={ __( 'Apply', 'lovage-blocks' ) }
 								type="submit"
 							/>
 						</form>

@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Typing
+ * Lovage Block: Typing
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -40,15 +40,15 @@ const {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/typing', {
+registerBlockType( 'lovage-blocks/typing', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Typing Heading', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a animated typing text.', 'elegant-blocks' ), // Block description.
+	title: __( 'Typing Heading', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a animated typing text.', 'lovage-blocks' ), // Block description.
 	icon: icons.write, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'typing', 'elegant-blocks' ),
-		__( 'heading', 'elegant-blocks' )
+		__( 'typing', 'lovage-blocks' ),
+		__( 'heading', 'lovage-blocks' )
 	],
 	attributes: {
 		id: {
@@ -133,7 +133,7 @@ registerBlockType( 'elegant-blocks/typing', {
 	    	>
 		    	   <RichText
 			            tagName="div"
-			            placeholder={ __( 'Content Text', 'elegant-blocks' ) }
+			            placeholder={ __( 'Content Text', 'lovage-blocks' ) }
 			            value={ content }
 			            className={ classnames('eb-typing-content', 'eb-text', 'eb-font-size-'+textFontSize) }
 			            onChange={ (value) => setAttributes( { content: value } ) }

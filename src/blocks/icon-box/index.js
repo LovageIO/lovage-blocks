@@ -1,5 +1,5 @@
 /**
- * Elegant Block: Icon Box
+ * Lovage Block: Icon Box
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -41,16 +41,16 @@ const {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'elegant-blocks/icon-box', {
+registerBlockType( 'lovage-blocks/icon-box', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Icon Box', 'elegant-blocks' ), // Block title.
-	description: __( 'Block showing a icon box.', 'elegant-blocks' ), // Block description.
+	title: __( 'Icon Box', 'lovage-blocks' ), // Block title.
+	description: __( 'Block showing a icon box.', 'lovage-blocks' ), // Block description.
 	icon: icons.iconbox, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'elegant-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'lovage-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'icon', 'elegant-blocks' ),
-		__( 'icon box', 'elegant-blocks' ),
-		__( 'box', 'elegant-blocks' ),
+		__( 'icon', 'lovage-blocks' ),
+		__( 'icon box', 'lovage-blocks' ),
+		__( 'box', 'lovage-blocks' ),
 	],
 	attributes: {
 		id: {
@@ -186,7 +186,7 @@ registerBlockType( 'elegant-blocks/icon-box', {
 	    	   <div className="eb-icon-box-content">
 		    	   <RichText
 			            tagName="h4"
-			            placeholder={ __( 'Title', 'elegant-blocks' ) }
+			            placeholder={ __( 'Title', 'lovage-blocks' ) }
 			            value={ title }
 			            className={ classnames('eb-icon-box-title', 'eb-text', 'eb-font-size-'+titleFontSize) }
 			            onChange={ (value) => setAttributes( { title: value } ) }
@@ -199,7 +199,7 @@ registerBlockType( 'elegant-blocks/icon-box', {
 
 		    	   <RichText
 			            tagName="p"
-			            placeholder={ __( 'Content', 'elegant-blocks' ) }
+			            placeholder={ __( 'Content', 'lovage-blocks' ) }
 			            value={ content }
 			            className={ classnames('eb-icon-box-desc', 'eb-text', 'eb-font-size-'+contentFontSize) }
 			            onChange={ (value) => setAttributes( { content: value } ) }

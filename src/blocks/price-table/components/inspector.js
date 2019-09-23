@@ -56,7 +56,7 @@ export default class Inspector extends Component {
 		return (
 		<InspectorControls key="inspector">
 	
-			<PanelBody title={ __('Font Size', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Font Size', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					label={ __( 'Title Font Size' ) }
 					value={ titleFontSize }
@@ -85,29 +85,29 @@ export default class Inspector extends Component {
 				/>
 			</PanelBody>
 
-			<PanelBody title={ __('Ribbon', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Ribbon', 'lovage-blocks') } initialOpen={ false }>
 				<ToggleControl
-					label={ __( 'Display The Ribbon?', 'elegant-blocks' ) }
+					label={ __( 'Display The Ribbon?', 'lovage-blocks' ) }
 					checked={ ribbon }
 					onChange={ () => this.props.setAttributes( { ribbon: ! ribbon } ) }
 				/>
 
 				 <ColorPicker
-				    label={ __('Ribbon Color', 'elegant-blocks') }
+				    label={ __('Ribbon Color', 'lovage-blocks') }
 		            color={ ribbonColor }
 		            onChangeComplete={ (value) => setAttributes( { ribbonColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Link Target', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Link Target', 'lovage-blocks') } initialOpen={ false }>
 				<ToggleControl
-					label={ __( 'Open link in new window', 'elegant-blocks' ) }
+					label={ __( 'Open link in new window', 'lovage-blocks' ) }
 					checked={ buttonTarget }
 					onChange={ () => this.props.setAttributes( { buttonTarget: ! buttonTarget } ) }
 				/>
 			</PanelBody>
 
-			<PanelBody title={ __('Button Shape', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Button Shape', 'lovage-blocks') } initialOpen={ false }>
 				<SelectControl
 					description={ __( 'Choose between a round, rounded or square button shape.' ) }
 					options={ ShapeOptions }
@@ -116,21 +116,21 @@ export default class Inspector extends Component {
 				/>
 			</PanelBody>
 
-			<PanelBody title={ __('Button Background Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Button Background Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ buttonBackgroundColor }
 		            onChangeComplete={ (value) => setAttributes( { buttonBackgroundColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Button Text Color', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Button Text Color', 'lovage-blocks') } initialOpen={ false }>
 			    <ColorPicker
 		            color={ buttonTextColor }
 		            onChangeComplete={ (value) => setAttributes( { buttonTextColor: value.hex } ) }
 		        />
 			</PanelBody>
 
-			<PanelBody title={ __('Button Font Size', 'elegant-blocks') } initialOpen={ false }>
+			<PanelBody title={ __('Button Font Size', 'lovage-blocks') } initialOpen={ false }>
 				<RangeControl
 					value={ buttonFontSize }
 					onChange={ ( value ) => this.props.setAttributes( { buttonFontSize: value } ) }
