@@ -1,13 +1,13 @@
 === Lovage Blocks ===
-Contributors: Lovage 
-Tags: Gutenberg, Blocks 
-Requires at least: 5.0 
-Tested up to: 5.2 
-Stable tag: 0.0.1 
-License: GPLv2 or later 
-License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Contributors: Lovage
+Tags: Gutenberg, Blocks
+Requires at least: 5.0
+Tested up to: 5.2
+Stable tag: 0.0.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A plugin, which offers the extended Gutenberg blocks. 
+A plugin, which offers the extended Gutenberg blocks.
 
 == Description ==
 
