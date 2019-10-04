@@ -25,7 +25,7 @@ Lovage Blocks offers some common blocks for Gutenberg editor. In the current ver
 * Progress Bar
 * Toggle
 
-In the future, we will add more and more useful blocks to this plugin. Also, You can use Lovage Blocks with our free WordPress theme Lovage (https://lovage.io).
+In the future, we will add more and more useful blocks to this plugin. Also, You can use Lovage Blocks with our free WordPress theme [Lovage](https://lovage.io).
 
 
 == Installation ==
